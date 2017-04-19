@@ -30,7 +30,6 @@ if (isPro) {
         })
     )
 } else {
-    // app.push('webpack-hot-middleware/client?path=http://localhost:3021/__webpack_hmr&reload=true&noInfo=false&quiet=false')
     plugins.push(
         new webpack.DefinePlugin({
             'process.env':{
@@ -82,7 +81,7 @@ module.exports = {
         contentBase: resolve('/'),
         historyApiFallback: true,
         compress: true,
-        port: 9000,
+        port: 3055,
         hot: true,
         inline: true,
         stats: {
