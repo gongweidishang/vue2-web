@@ -7,7 +7,10 @@ import Bang from './components/bang/Bang.vue';
 export default [
     {
         path: '/',
-        redirect: '/Home',
+        redirect: 'home'
+    },
+    {
+        path: '/home',
         component: Home
     },
     {
