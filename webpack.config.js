@@ -43,7 +43,7 @@ if (isPro) {
 
 module.exports = {
     entry: {
-        app: ['babel-polyfill', './src/main']
+        app: ['./src/main']
     },
     output: {
         filename: '[name].js',
@@ -68,7 +68,7 @@ module.exports = {
             include: resolve('src')
         }, {
             test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-            use: ['url-loader?limit=10000&name=img/[name].[hash:7].[ext]']
+            use: ['url-loader?limit=10000&name=files/[name].[hash:7].[ext]']
         }, {
             test: /\.(less|css)$/,
             use: ExtractTextPlugin.extract({

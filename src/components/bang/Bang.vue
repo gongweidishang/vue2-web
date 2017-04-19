@@ -1,9 +1,9 @@
 <template>
-    <div>foo页面</div>
+    <div>榜单页面</div>
 </template>
 
 <script>
     export default {
-        name: 'Foo'
+        name: 'Bang'
     }
 </script>
