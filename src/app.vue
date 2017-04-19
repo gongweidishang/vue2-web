@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>vue-web</h1>
+        <h1>vue2-web</h1>
         <p>A vu2 project.</p>
     </div>
 </template>

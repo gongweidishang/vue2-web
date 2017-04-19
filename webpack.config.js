@@ -48,15 +48,23 @@ module.exports = {
     },
     output: {
         filename: '[name].js',
-        path: resolve('dist'),
-        publicPath: '/dist/',
+        path: path.resolve(__dirname, 'dist'),
+        publicPath: 'dist',
         chunkFilename: '[name].[hash].js'
     },
     plugins: plugins,
+    node: {
+        fs: 'empty'
+    },
     module: {
         rules: [{
-            test: /\.(js|vue)$/,
-            use: ['babel-loader', 'vue-loader'],
+            test: /\.js$/,
+            use: ['babel-loader'],
+            exclude: /node_modules/,
+            include: resolve('src')
+        },{
+            test: /\.vue$/,
+            use: ['vue-loader'],
             exclude: /node_modules/,
             include: resolve('src')
         }, {
@@ -80,12 +88,9 @@ module.exports = {
         stats: {
             assets: true,
             children: false,
-            chunks: false,
-            hash: false,
             modules: false,
             publicPath: false,
             timings: true,
-            version: false,
             warnings: true,
             colors: {
                 green: '\u001b[32m',
