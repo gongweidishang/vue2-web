@@ -5,7 +5,7 @@ vue2、vue-router2、webpack2框架
 后续我会继续研究vue管理数据的方式，以及非常重要的组件通讯机制。
 
 
-![image](https://github.com/hyy1115/vue2-web/tree/master/public/demo.gif)
+![image](https://github.com/hyy1115/vue2-web/blob/master/public/demo.gif)
 
 
 ### 安装
