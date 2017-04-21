@@ -15,7 +15,9 @@ var resolve = function (dir) {
     return path.join(__dirname, dir);
 };
 
-var plugins = [];
+var plugins = [
+    new ExtractTextPlugin('style.css')
+];
 if (isPro) {
     plugins.push(
         new webpack.DefinePlugin({
