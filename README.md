@@ -1,12 +1,24 @@
 # vue2-web
 vue2、vue-router2、webpack2框架
 
-想从react转vue，可以跟着我这个项目走，今天只完成了vue框架的搭建，以及路由跳转，当然少不了热更新，webpack服务器等react中有的开发环境，在vue项目中你一样可以用到。
-后续我会继续研究vue管理数据的方式，以及非常重要的组件通讯机制。
+想从react转vue，可以跟着我这个项目走。
 
 
 ![image](https://github.com/hyy1115/vue2-web/blob/master/public/demo.gif)
 
+4月21日更新：
+
+1、父组件传递给子组件数据；
+
+2、子组件通过props接收数据；
+
+3、v:bind以及v-for的使用；
+
+4、实现了轮播组件。
+
+4月19日发布第一版：
+
+搭建了vue2-webpack2架构。
 
 ### 安装
 
