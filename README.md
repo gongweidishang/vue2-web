@@ -7,20 +7,6 @@ vue2、vue-router2、webpack2框架
 
 ![image](https://github.com/hyy1115/vue2-web/blob/master/public/demo.gif)
 
-4月21日更新：
-
-1、父组件传递给子组件数据；
-
-2、子组件通过props接收数据；
-
-3、v:bind以及v-for的使用；
-
-4、实现了轮播组件。
-
-4月19日发布第一版：
-
-搭建了vue2-webpack2架构。
-
 ### 安装
 
 ```javascript
@@ -38,3 +24,27 @@ npm satrt
 ```javascript
 http://localhost:3055/
 ```
+
+![image](https://github.com/hyy1115/vue2-web/blob/master/public/build.png)
+
+4月23日更新：
+
+1、添加打包功能；
+
+2、分离css和js；
+
+3、增加vue-tools。
+
+4月21日更新：
+
+1、父组件传递给子组件数据；
+
+2、子组件通过props接收数据；
+
+3、v:bind以及v-for的使用；
+
+4、实现了轮播组件。
+
+4月19日发布第一版：
+
+搭建了vue2-webpack2架构。
