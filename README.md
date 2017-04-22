@@ -25,7 +25,7 @@ npm satrt
 http://localhost:3055/
 ```
 
-![image](https://github.com/hyy1115/vue2-web/blob/master/public/build.png)
+![image](https://github.com/hyy1115/vue2-web/blob/master/public/build.png) 
 
 4月23日更新：
 
