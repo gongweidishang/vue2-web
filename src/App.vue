@@ -13,7 +13,6 @@
     import Nav from './components/common/Nav.vue';
     import Home from './components/home/Home.vue';
     export default {
-        name: 'App',
         components: {
             "app-header": Header,
             "app-nav": Nav,

@@ -3,6 +3,7 @@
  */
 const path = require('path');
 const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 //判断当前运行环境是开发模式还是生产模式
@@ -16,7 +17,11 @@ var resolve = function (dir) {
 };
 
 var plugins = [
-    new ExtractTextPlugin('style.css')
+    new ExtractTextPlugin('style.css'),
+    new HtmlWebpackPlugin({
+        filename: 'index.html',
+        template: './index.html'
+    })
 ];
 if (isPro) {
     plugins.push(
@@ -70,7 +75,7 @@ module.exports = {
             include: resolve('src')
         }, {
             test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-            use: ['url-loader?limit=10000&name=files/[name].[hash:7].[ext]']
+            use: ['url-loader?limit=10000&name=/files/[name].[hash:7].[ext]']
         }, {
             test: /\.(less|css)$/,
             use: ExtractTextPlugin.extract({
@@ -90,6 +95,7 @@ module.exports = {
             assets: true,
             children: false,
             modules: false,
+            chunks: false,
             publicPath: false,
             timings: true,
             warnings: true,

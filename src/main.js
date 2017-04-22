@@ -9,7 +9,7 @@ import VueResource from 'vue-resource';
 
 Vue.use(VueResource); //http请求注册
 Vue.use(VueRouter); //路由注册
-
+console.log('BASE_URL: ', BASE_URL)
 // 实例化路由
 const router = new VueRouter({
     // mode: 'history', //H5 路由模式，需要服务端做渲染防止404错误

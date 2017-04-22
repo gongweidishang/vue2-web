@@ -1,21 +1,29 @@
 <template>
     <nav class="nav">
-        <router-link to="/home">推荐</router-link>
-        <router-link to="/bang">排行</router-link>
-        <router-link to="/category">分类</router-link>
-        <router-link to="/artist">歌手</router-link>
-        <router-link to="/mv">MV</router-link>
+        <router-link v-for="nav in navList" :to="nav.path" :key="nav.id" :style="{width: 100/navList.length + '%'}">{{nav.text}}</router-link>
     </nav>
 </template>
 
 <script>
     export default {
         name: 'Nav',
+        data() {
+            return {
+                navList: [
+                    {path: '/home', text: '新歌'},
+                    {path: '/bang', text: '排行'},
+                    {path: '/category', text: '歌单'},
+                    {path: '/artist', text: '歌手'}
+                ]
+            }
+        }
     }
 </script>
 
 <style lang="less">
     .nav {
+        position: fixed;
+        z-index: 10;
         width: 100%;
         height: 2.6rem;
         border-bottom: 1px solid #ddd;
@@ -23,7 +31,6 @@
         margin-top: 3rem;
         a {
             float: left;
-            width: 20%;
             font-size: 1.1rem;
             text-align: center;
             line-height: 2.6rem;
