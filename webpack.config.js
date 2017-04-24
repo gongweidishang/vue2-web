@@ -90,7 +90,7 @@ module.exports = {
             include: resolve('src')
         }, {
             test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-            use: ['url-loader?limit=10000&name=[name].[hash:7].[ext]']
+            use: ['url-loader?limit=10000&name=files/[name].[hash:7].[ext]']
         }, {
             test: /\.(less|css)$/,
             use: ExtractTextPlugin.extract({
