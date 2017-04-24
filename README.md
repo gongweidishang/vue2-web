@@ -27,24 +27,28 @@ http://localhost:3055/
 
 ![image](https://github.com/hyy1115/vue2-web/blob/master/public/build.png) 
 
+4月25日更新：
+
+1、列表渲染，v-for；  
+2、条件渲染，v-if；  
+3、自适应布局；  
+4、事件处理器，v-on:click；  
+5、data数据管理。  
+
+
 4月23日更新：
 
-1、添加打包功能；
-
-2、分离css和js；
-
-3、增加vue-tools。
+1、添加打包功能；  
+2、分离css和js；  
+3、增加vue-tools。  
 
 4月21日更新：
 
-1、父组件传递给子组件数据；
-
-2、子组件通过props接收数据；
-
-3、v:bind以及v-for的使用；
-
-4、实现了轮播组件。
+1、父组件传递给子组件数据；  
+2、子组件通过props接收数据；  
+3、v:bind以及v-for的使用；  
+4、实现了轮播组件。  
 
 4月19日发布第一版：
 
-搭建了vue2-webpack2架构。
+1、搭建了vue2-webpack2架构。
