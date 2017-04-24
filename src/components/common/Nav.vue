@@ -28,7 +28,7 @@
         height: 2.6rem;
         border-bottom: 1px solid #ddd;
         background: #fff;
-        margin-top: 3rem;
+        margin-top: 3.75rem;
         a {
             float: left;
             font-size: 1.1rem;

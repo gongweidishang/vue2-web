@@ -1,19 +1,23 @@
 <template>
-    <ul class="song-ul">
-        <li v-for="song in songList">
-            <span class="title">{{song.singer}} - {{song.title}}</span>
-            <i :style="{background: 'url('+ downLoad +') no-repeat'}"></i>
-        </li>
-    </ul>
+    <li v-if="seen" v-on:click="reverseMsg(song.title)">
+        <span class="title" :title="song.singer">{{song.singer}} - {{song.title}}</span>
+        <i :style="{background: 'url('+ downLoadIcon +') no-repeat'}"></i>
+    </li>
 </template>
 
 <script>
-    import downLoad from '../../../static/img/home/download_icon.png'
+    import downLoadIcon from '../../../static/outImg'
     export default {
-        props: ['songList'],
+        props: ['song'],
         data() {
             return {
-                downLoad: downLoad
+                downLoadIcon: downLoadIcon,
+                seen: true
+            }
+        },
+        methods: {
+            reverseMsg(title) {
+                console.log('title: ', title)
             }
         }
     }
@@ -47,5 +51,11 @@
                 background-size: 100%;
             }
         }
+    }
+    .fade-enter-active, .fade-leave-active {
+        transition: opacity .3s
+    }
+    .fade-enter, .fade-leave-active {
+        opacity: 0
     }
 </style>

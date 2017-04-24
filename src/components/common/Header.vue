@@ -14,7 +14,7 @@
 <style>
     .header {
         background: #1da0ef;
-        height: 3rem;
+        height: 3.75rem;
         width: 100%;
         position: fixed;
         left: 0;
@@ -27,7 +27,7 @@
         color: #fff;
         font-size: 1.5rem;
         margin-left: 0.833rem;
-        margin-top: 0.833rem;
+        margin-top: 1.2rem;
     }
     .logo {
         width: 7rem;

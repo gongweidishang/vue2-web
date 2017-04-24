@@ -3,6 +3,8 @@
  */
 import Home from './components/home/Home.vue';
 import Bang from './components/bang/Bang.vue';
+import Category from './components/category/Category.vue';
+import Artist from './components/artist/Artist.vue';
 
 export default [
     {
@@ -36,6 +38,14 @@ export default [
             // 导航离开该组件的对应路由时调用
             // 可以访问组件实例 `this`
             console.log('离开榜单页面之前拦截：');
-        }
+        },
+    },
+    {
+        path: '/category',
+        component: Category
+    },
+    {
+        path: '/artist',
+        component: Artist
     }
 ]

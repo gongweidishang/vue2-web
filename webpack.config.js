@@ -41,8 +41,7 @@ if (isPro) {
         new webpack.DefinePlugin({
             'process.env':{
                 'NODE_ENV': JSON.stringify(nodeEnv)
-            },
-            BASE_URL: JSON.stringify('http://localhost:9009'),
+            }
         }),
         new webpack.HotModuleReplacementPlugin()
     )
@@ -55,7 +54,7 @@ module.exports = {
     output: {
         filename: '[name].js',
         path: path.resolve(__dirname, 'dist'),
-        publicPath: 'dist',
+        publicPath: '/',
         chunkFilename: '[name].[hash].js'
     },
     plugins: plugins,
@@ -75,7 +74,7 @@ module.exports = {
             include: resolve('src')
         }, {
             test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-            use: ['url-loader?limit=10000&name=/files/[name].[hash:7].[ext]']
+            use: ['url-loader?limit=10000&name=files/[name].[hash:7].[ext]']
         }, {
             test: /\.(less|css)$/,
             use: ExtractTextPlugin.extract({
