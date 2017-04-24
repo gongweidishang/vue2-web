@@ -6,7 +6,7 @@
 </template>
 
 <script>
-    import downLoadIcon from '../../../static/outImg'
+    import downLoadIcon from 'static/outImg'
     export default {
         props: ['song'],
         data() {

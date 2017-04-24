@@ -8,7 +8,7 @@
 
 <script>
     import Bang from './template/BangList.vue'
-    import { bangList } from '../../static/data/data'
+    import { bangList } from 'static/data/data'
     export default {
         name: 'Bang',
         components: {
