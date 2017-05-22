@@ -2,7 +2,7 @@
     <li>
         <router-link :to="list.pathname">
             <div class="left">
-                <img :src="list.url" :alt="list.title">
+                <img :src="'.' + list.url" :alt="list.title">
             </div>
             <div class="right">
                 {{list.title}}
