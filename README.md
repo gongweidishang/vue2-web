@@ -4,6 +4,7 @@ vue2、vue-router2、webpack2框架
 想从react转vue，可以跟着我这个项目走。  
 教程网址：https://segmentfault.com/a/1190000009127162
 
+运行效果：https://hyy1115.github.io/blog/
 
 ![image](https://github.com/hyy1115/vue2-web/blob/master/public/demo.gif)
 
