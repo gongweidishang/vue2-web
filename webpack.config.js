@@ -53,13 +53,14 @@ if (isPro) {
 }
 
 module.exports = {
+    devtool: !isPro && 'cheap-eval-source-map',
     entry: {
         app: ['./src/main']
     },
     output: {
         filename: '[name].js',
         path: path.resolve(__dirname, 'dist'),
-        publicPath: '/',
+        publicPath: isPro ? './dist/' : '/',
         chunkFilename: '[name].[hash].js'
     },
     plugins: plugins,

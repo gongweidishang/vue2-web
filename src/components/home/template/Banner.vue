@@ -1,7 +1,7 @@
 <template>
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide" v-for="str in listImg" :style="{ backgroundImage: 'url(.' + str.url + ')' }"></div>
+            <div class="swiper-slide" v-for="str in listImg" :style="{ backgroundImage: 'url(' + str.url + ')' }"></div>
         </div>
         <div class="swiper-pagination swiper-pagination-white"></div>
     </div>
