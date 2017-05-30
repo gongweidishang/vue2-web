@@ -1,6 +1,8 @@
 # vue2-web
 vue2、vue-router2、webpack2框架
 
+[![codebeat badge](https://codebeat.co/badges/c7d14252-0d19-4400-b808-a2bea593c6fe)](https://codebeat.co/projects/github-com-hyy1115-vue2-web-master)
+
 想从react转vue，可以跟着我这个项目走。  
 教程网址：https://segmentfault.com/a/1190000009127162
 
