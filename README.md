@@ -3,8 +3,7 @@ vue2、vue-router2、webpack2框架
 
 [![codebeat badge](https://codebeat.co/badges/c7d14252-0d19-4400-b808-a2bea593c6fe)](https://codebeat.co/projects/github-com-hyy1115-vue2-web-master)
 
-想从react转vue，可以跟着我这个项目走。  
-教程网址：https://segmentfault.com/a/1190000009127162
+教程：https://segmentfault.com/a/1190000009127162
 
 运行效果：https://hyy1115.github.io/blog/
 
@@ -32,26 +31,26 @@ http://localhost:3055/
 
 4月25日更新：
 
-1、列表渲染，v-for；  
-2、条件渲染，v-if；  
-3、自适应布局；  
-4、事件处理器，v-on:click；  
-5、data数据管理。  
+- [x] 列表渲染，v-for；  
+- [x] 条件渲染，v-if；  
+- [x] 自适应布局；  
+- [x] 事件处理器，v-on:click；  
+- [x] data数据管理。  
 
 
 4月23日更新：
 
-1、添加打包功能；  
-2、分离css和js；  
-3、增加vue-tools。  
+- [x] 添加打包功能；  
+- [x] 分离css和js；  
+- [x] 增加vue-tools。  
 
 4月21日更新：
 
-1、父组件传递给子组件数据；  
-2、子组件通过props接收数据；  
-3、v:bind以及v-for的使用；  
-4、实现了轮播组件。  
+- [x] 父组件传递给子组件数据；  
+- [x] 子组件通过props接收数据；  
+- [x] v:bind以及v-for的使用；  
+- [x] 实现了轮播组件。  
 
 4月19日发布第一版：
 
-1、搭建了vue2-webpack2架构。
+- [x] 搭建了vue2-webpack2架构。
